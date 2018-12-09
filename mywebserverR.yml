@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: des i want to install webserver on redhat(httpd)
+    apt:
+      name: httpd
+      state: present
+  - name:  ded i want to start webserver on redhat(httpd)
+    service:
+      name: httpd
+      state: started
