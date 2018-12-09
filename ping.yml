@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+  - name: DES IS I AM PINGING AL NODES
+    ping:
