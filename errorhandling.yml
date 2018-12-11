@@ -8,12 +8,12 @@
       state: present
     
     
-  - namee: intall tree 2
+  - name: intall tree 2
     yum:
-      name: tree
+      namee: tree
       state: present
     ignore_errors: yes
-    
+
   - name: intall wget 3
     yum:
       name: wget
