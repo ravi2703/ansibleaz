@@ -1,0 +1,20 @@
+---
+- include_tasks : myfile.yml
+- name : install webserver on red hat (httpd)
+  yum :
+
+   name : httpd
+   state : present
+
+- name : start webserver
+  service :
+    
+    name : httpd
+    state : started
+
+    handlers :
+    -name : restart the webserver
+    service :
+       name : 
+       state : restarted
+       
