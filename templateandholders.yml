@@ -7,6 +7,12 @@
     yum:
       name: httpd
       state: present
+
+  - name: copy index file 
+    template:
+      src: myindex.j2
+      dest: /var/www/html/index.html
+    notify: restartwebserver
     
   - name: service start
     service:
