@@ -10,13 +10,13 @@
     src: templates/tomconfig.j2
     dest: /usr/share/tomcat/conf/tomcat.conf
 
-- name: Install web packages
+- name: Install Admin Packages
   yum:
-    name: "{{item}}"
+    name: "{{ item }}"
     state: present
   with_items:
-    -tomcat-webapps
-    -tomcat-admin-webapps
+    - tomcat-webapps
+    - tomcat-admin-webapps
 
 - name: copy tomuser file
   template:
