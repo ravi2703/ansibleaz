@@ -4,15 +4,16 @@
   tasks: 
   - name: intall git 1
     yum:
-      name: git
+      namee: git
       state: present
+    ignore_errors: yes
     
     
   - name: intall tree 2
     yum:
-      namee: tree
+      name: tree
       state: present
-    ignore_errors: yes
+    
 
   - name: intall wget 3
     yum:

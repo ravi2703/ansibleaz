@@ -3,3 +3,6 @@
 
 [webservers]
 172.31.20.237
+
+[applicationservers]
+172.31.22.62
